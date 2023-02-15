@@ -1,0 +1,37 @@
+form[role="search"] {
+  display: flex;
+  border: 2px solid $borders;
+  border-radius: 40px;
+  padding: 4px;
+
+  &:focus-within {
+    outline: 2px solid $primary;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $primary;
+    border: 1px solid $primary;
+    border-radius: inherit;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+
+  input,
+  button {
+    color: $text;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: $semibold;
+  }
+}
